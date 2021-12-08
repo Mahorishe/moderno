@@ -1,5 +1,5 @@
 $(function(){
-    let mixer = mixitup('.products__inner-box');
+    
 
     $('.rate-star').rateYo({
         rating: 5,
@@ -14,4 +14,6 @@ $(function(){
         slidesToScroll: 4,
 
     });
+
+    let mixer = mixitup('.products__inner-box');
 });
