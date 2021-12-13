@@ -1493,4 +1493,154 @@ button.icon-unsorted
 
 //-----------------------------------------------------
 //end settings
+//start profile
+.profile
+  &__inner
+    display: flex
+  &__aside
+    max-width: 270px
+    width: 100%
+    margin-right: 30px
+    & .footer__social-link
+      margin-bottom: 26px
+  &__content
+    width: 100% 
+.profile-status
+  color: #707070
+  border: 1px solid #d6d6d6
+  padding: 6px 9px 6px 26px
+  position: relative
+  &::before
+    position: absolute
+    content: ''
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    top: 14px
+    left: 10px
+.profile-on
+  &::before
+    background-color: $green
+.profile-off
+  &::before
+    background-color: $red
+.profile__aside
+  &-btn
+    margin-bottom: 30px
+    font-size: 16px
+    color: #fff
+    text-align: center
+  &-message
+    display: block
+    width: 100%
+    background-color: $color-text
+    font-weight: 500
+    color: #fff
+    margin-bottom: 13px
+    padding: 18px 10px
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75)
+    position: relative
+    &::before
+      content: '\f003'
+      font-family: 'icomoon'
+      position: absolute
+      left: 48px
+      top: 17px
+  &-follow
+    display: block
+    width: 100%
+    background-color: $green
+    font-weight: 700
+    color: #fff
+    padding: 18px 10px
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75)
+.profile__banner
+  padding: 17px
+  background-color: #fff
+  border: 1px solid #dedede
+  margin-bottom: 35px
+  &-images
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 332px
+.profile__info
+  display: flex
+  border: 1px solid #dedede
+  text-align: center
+  background-color: #fff
+  font-size: 14px
+.profile__item
+  width: 25%
+  padding: 20px 5px 17px
+  & + .profile__item
+    border-left: 1px solid #dedede
+  &-title
+    font-weight: 500
+    color: $dark-bg
+  &-value
+    color: #707070
+    span
+      font-size: 12px
+      color: $dark-bg
+    &.profile__item-sales
+      color: #000
+.profile__settings
+  .product-detail__info.settings__tabs
+    .tabs span
+      font-family: 'Roboto', sans-serif !important
+      font-weight: 500
+      position: relative
+      color: #707070
+      &.active::before
+        color: $green
+      &::before
+        color: #d0d0d0
+        top: 16px
+        left: 24px
+        font-family: 'icomoon'
+        position: absolute
+
+.personal-box
+  padding: 35px 40px 25px
+  background-color: #fff
+  border: 1px solid #dedede
+  &__title
+    font-size: 20px
+    color: $dark-bg
+    font-weight: 700
+    margin-bottom: 25px
+  &__descr
+    color: #707070
+    margin-bottom: 40px
+.personal-box__skill
+  &-head
+    display: flex
+    justify-content: space-between
+    margin-bottom: 16px
+  &-name,
+  &-procent
+    color: $dark-bg
+    font-weight: 500
+    font-size: 16px
+    font-style: italic
+  &-procent
+    font-weight: 700
+    font-style: normal
+  &-line
+    height: 15px
+    border-radius: 3px
+    background-color: #f4f4f4
+    margin-bottom: 23px
+    span
+      display: block
+      height: 15px
+      border-radius: 3px
+      background-color: $green
+
+
+
+
+//-----------------------------------------------------
+//end profile
 @import 'media'
