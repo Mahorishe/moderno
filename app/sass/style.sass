@@ -720,12 +720,10 @@
   padding: 25px 0
 // ------------------------------------------------------------------------
 // end footer
-
-// start product-page
+//start all-items
 .product-page__inner
   display: flex
   padding-bottom: 110px
-
 .product-page__aside
   margin-right: 30px
 .aside__item
@@ -765,6 +763,7 @@
     padding-top: 20px
   button
     margin-top: 55px
+    margin-bottom: 0
     padding: 16px 10px
     background-color: $green
     text-align: center
@@ -779,7 +778,7 @@
       content: '\f002'
       color: #fff
       position: absolute
-      left: 58px
+      left: 49px
       top: 15px
       font-size: 15px
       font-family: 'icomoon'
@@ -815,8 +814,12 @@
 .irs--flat .irs-handle
   top: 19px
 .product-page__aside
-  .product__item-img
+  .product__item-images
     min-height: 120px
+    display: block
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
   .product__item
     box-shadow: none
   .product__item-content
@@ -881,14 +884,24 @@
 button.icon-sort-amount-desc
   font-size: 18px
   color: #455a64
+  padding-top: 64px
+  padding-left: 0
+  padding-right: 10px
 button.icon-unsorted
   font-size: 14px
   color: #707070
+  padding-top: 64px
+  padding-left: 13px
+button.icon-th-large
+  padding-right: 10px
+button.icon-th-list
+  padding-top: 64px
+  padding-left: 0
+  padding-right: 10px
 .product-page__content
   width: 100%
 .product-page__content
   .product__item
-    flex-basis: calc(33.3333% - 30px)
     background-color: #fff
     transition: all .5s
   .product__item-img
@@ -906,12 +919,11 @@ button.icon-unsorted
     padding: 0
 .product-page__items
   display: grid
-  justify-content: start
-  grid-template-columns: repeat(auto-fill, 270px)
   justify-content: center
+  grid-template-columns: repeat(auto-fill, 270px)
   gap: 30px
-  margin-bottom: 90px
 .pagination__list
+  margin-top: 102px
   li
     display: inline-block
     & + li
@@ -962,7 +974,7 @@ button.icon-unsorted
 .product__item
   &.list
     max-width: 100%
-    flex-basis: 100%
+    grid-column: 1/4
     .product__item-img
       width: 240px
       float: left
@@ -981,7 +993,7 @@ button.icon-unsorted
         color: #aeb4bb
         margin-top: 30px
     .product__item-name
-      max-width: 480px
+      max-width: 480px    
     .product__item-content
       padding-top: 23px
     .product__item-list
@@ -989,7 +1001,7 @@ button.icon-unsorted
     .product__item-star
       margin-left: auto
       margin-right: 30px
-// end product-page
+// end all-items
 //-----------------------------------------------------
 // start product-detail
 .product-detail
