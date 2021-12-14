@@ -1,3 +1,67 @@
+@media (max-width: 1900px)
+  .products-slider__inner
+    text-align: center
+    .product__item
+      max-width: 400px
+      margin-top: -7px
+  .product__item-category
+    text-align: left
+@media (max-width: 1400px)
+  .products__inner-box
+    grid-template-columns: repeat(3, 33.333%,)
+  .products-slider__inner
+    text-align: center
+    .product__item
+      width: 560px
+@media (max-width: 1225px)
+  .products-slider__inner
+    .product__item
+      max-width: 400px
+  .tutorial__inner
+    display: block
+  .tutorial__item
+    display: block
+    margin: 0 auto
+@media (max-width: 1200px)
+  .withdrawals__inner
+    display: block
+  .withdrawals__earnings,
+  .withdrawals__history
+    max-width: 100%
+    margin-bottom: 20px
+  .withdrawals__content-item
+    max-width: 490px
+  .contact__form-block
+    display: block
+    input
+      width: 100%
+  .product-detail__more-box
+    grid-template-columns: repeat(auto-fill, 47%)
+    justify-content: space-between
+  .product-detail__inner
+    display: block
+    .aside__item
+      width: 100%
+      position: relative
+      .author__achievements
+        position: absolute
+        top: 50%
+        right: 32px
+  .product-detail__content
+    max-width: 100%
+    margin-right: 0
+  .product-detail__images
+    max-width: 100%
+  .product-detail__more
+    margin-bottom: 20px
+  .product-page__inner
+    display: block
+    .aside__item
+      width: 100%
+  .top-sellers
+    display: none
+  .product-page__aside
+    margin-right: 0
 @media (max-width: 1150px)
   .footer__inner
     flex-wrap: wrap
@@ -6,6 +70,31 @@
     margin-bottom: 30px
   .header__text
     display: none
+  .contact__form-block
+    display: block
+    input
+      display: block
+      width: 100%
+  .products__inner-box
+    grid-template-columns: repeat(2, 50%,)
+  .product__item-img
+    min-height: 225px
+@media (max-width: 1020px)
+  .product-detail__info.settings__tabs
+    display: block
+  .product-detail__info.settings__tabs .tabs
+    margin-bottom: 20px
+    max-width: 100%
+  .advantages
+    padding: 20px 10px 15px
+@media (max-width: 960px)
+  .page-404__main::after
+    display: none
+  .product-page__items
+    grid-template-columns: repeat(auto-fill, 48%)
+    justify-content: start
+  .product__item.list
+    grid-column: 1/3
 @media (max-width: 900px)
   .footer__inner
     justify-content: start
@@ -15,6 +104,37 @@
   .footer__col-social
     min-width: 100%
     margin-top: 30px
+  .contact__content
+    display: block
+  .profile__inner
+    flex-direction: column
+  .profile__content
+    order: -1
+    margin-bottom: 20px
+  .profile__aside
+    max-width: 100%
+    .aside__item
+      width: 100%
+      position: relative
+    .author__achievements
+      position: absolute
+      top: 50%
+      right: 32px
+    &-btn
+      width: 300px
+  .search__inner-title
+    font-size: 35px
+    line-height: 40px
+  .products-slider__inner
+    .product__item
+      max-width: 100%
+  .advantages__inner
+    display: block
+  .advantages__item
+    margin-bottom: 30px
+    max-width: 100%
+  .tutorial
+    padding-bottom: 30px
 @media (max-width: 840px)
   .menu__list
     display: none
@@ -44,18 +164,166 @@
       background-color: #fff
       & + div
         margin-top: 5px
+  .upload__line 
+    display: block
+    label
+      display: inline-block
+      margin-bottom: 5px
+  .upload__inner
+    button
+      margin-left: 0
+  .product-detail__box
+    display: block
+  .product-detail__link
+    margin-bottom: 20px
+  .icon-th-list
+    display: none
+  .icon-th-large
+    position: relative
+    &::before
+      position: absolute
+      top: 30px
+@media (max-width: 820px)
+  .product-page__items
+    grid-template-columns: repeat(auto-fill, 100%)
+    justify-content: start
+  .product__item
+    max-width: 100%
+  .product__item.list
+    grid-column: 1/2
+@media (max-width: 740px)
+  .page-404__title
+    font-size: 25px
+    line-height: 25px
+    margin-bottom: 20px
+  .page-404__descr
+    font-size: 15px
+  .products__inner-btn button
+    width: 100%
+    margin: 0
+    & + button
+      margin-left: 0
+@media (max-width: 700px)
+  .products__inner-box
+    grid-template-columns: repeat(1, 100%,)
+  .product__item
+    max-width: 100%
+  .author
+    padding-right: 10px
+    padding-left: 10px
+  .author__box
+    display: flex
+    flex-direction: column
+    max-width: 500px
+  .author__title
+    margin: 0 auto 10px
+  .author__link
+    padding: 7px 15px
+    text-align: center
 @media (max-width: 640px)
   .notification__box,
   .message__box
     display: none
   .circle__menu
     right: auto
+  .page-404__main
+    font-size: 250px
+    line-height: 250px
+    margin-bottom: 20px
+  .page-404__box
+    padding: 0 10px
+  .settings__box-content
+    padding-left: 10px
+    padding-right: 10px
+  .settings__box-content .settings__line
+    display: block
+    label
+      display: inline-block
+      margin-bottom: 5px
+  .settings__box-title
+    font-size: 20px
+    padding-left: 10px
+    padding-right: 10px
+  .profile__banner-images
+    min-height: 240px
+  .profile__info
+    display: block
+  .profile__item
+    width: 100%
+  .profile__item + .profile__item
+    border-left: none
+    border-top: 1px solid #dedede
+  .profile__banner
+    margin-bottom: 20px
+@media (max-width: 600px)
+  .upload__content
+    padding: 0 10px
+  .upload__title
+    padding: 10px 10px 9px
+    margin-bottom: 20px
+  .contact__box
+    padding: 35px 10px 15px
+  .contact__head
+    padding-right: 10px
+    padding-left: 10px
+  .contact__map
+    iframe
+      height: 300px
+  .container
+    padding: 0 7px
+  .personal-box
+    padding-left: 10px
+    padding-right: 10px
+  .profile__aside-btn
+    width: 280px
+  .product-detail__info
+    .tabs
+      display: block
+      .tab
+        display: block
+        & + .tab
+          border-left: none
+          border-top: 1px solid #d7d7d7
+  .tab-item__list
+    column-count: 1
+  .product-detail__link a
+    width: 100%
+    margin-bottom: 20px
+    & + a
+      margin-left: 0
+  .product-detail__images
+    height: 300px
+  .title
+      font-size: 30px
 @media (max-width: 540px)
   .footer__col-menu
     min-width: 100%
     & + &
       margin-left: 0
       margin-top: 30px
+  .withdrawals__content
+    button
+      display: block
+      margin: 0 auto 50px
+  .withdrawals__history .withdrawals__content
+    padding: 0 10px
+  .withdrawals__content-items
+    overflow-x: scroll
+  .withdrawals__content-item
+    min-width: 490px
+  .page-404__link
+    margin-bottom: 50px
+  .product-detail__inner 
+    .aside__item .author__achievements
+      position: static
+  .product-detail__more-box
+    grid-template-columns: repeat(auto-fill, 100%)
+  .products-slider .slick-dots li
+    margin-left: 2px
+    margin-right: 2px
+    button
+      width: 12px
+      height: 12px
 @media (max-width: 520px)
   .header__btn-menu
     display: block
@@ -99,6 +367,10 @@
     top: 52px
   .menu__list
     top: 71px
+  .page-404__main
+    font-size: 200px
+  .profile__aside .author__achievements
+    position: static
 @media (max-width: 495px)
   .user__menu
     left: 0
@@ -108,6 +380,16 @@
     margin-left: 0
   .header__box
     justify-content: center
+  .about__head
+    padding: 23px 10px
+  .about__box
+    padding: 0 10px
+@media (max-width: 440px)
+  .page-404__main
+    font-size: 150px
+    line-height: 150px
+  .page-404__title
+    font-size: 20px
 @media (max-width: 430px)
   .header__box
     &.active
@@ -118,15 +400,22 @@
     padding-right: 0
   .card
     margin-right: 10px
-@media (max-width: 430px)
-  .user
-    margin-right: 0
+@media (max-width: 420px)
+  .product__item-info
+    padding-left: 10px
+    padding-right: 10px
+  .author__title
+    font-size: 25px
+    text-align: center
 @media (max-width: 360px)
   .circle__menu
     left: -42px
 @media (max-width: 340px)
   .header__logo
     margin-left: 43px
+  .page-404__main
+    padding: 0 10px
+    font-size: 120px
 @media (min-width: 840px)
   .menu__list
     display: block !important
