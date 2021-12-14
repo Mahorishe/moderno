@@ -80,5 +80,34 @@ body
           color: $dark-bg
     a
       color: #b0bec5
+@mixin select-form
+  .jq-selectbox
+    width: 100%
+  .jq-selectbox__select
+    height: 40px
+    line-height: 40px
+    padding: 0 17px
+    border: 1px solid #d7d7d7
+    border-bottom-color: #d7d7d7
+    border-radius: 0
+    background: #f9f9f9
+    box-shadow: none
+    font-family: 'Roboto', sans-serif
+    color: #707070
+    text-shadow: none
+  .jq-selectbox__dropdown
+    top: 35px
+  .jq-selectbox__trigger
+    border-left: none
+  .jq-selectbox__trigger-arrow
+    border: none
+    top: 0
+    right: 20px
+    line-height: 40px
+    font-size: 15px
+    &::before
+      content: '\f0d7'
+      font-family: 'icomoon'
+
 #dialog-content
   display: none

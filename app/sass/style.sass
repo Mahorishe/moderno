@@ -1490,21 +1490,11 @@ button.icon-unsorted
       color: #fff
       text-transform: uppercase
       margin-left: 260px
+  @include select-form
   .jq-selectbox
     max-width: 540px
-    width: 100%
   .jq-selectbox__select
-    height: 40px
-    line-height: 40px
-    padding: 0 17px
-    border: 1px solid #d7d7d7
-    border-bottom-color: #d7d7d7
-    border-radius: 0
     background: #f1f4f5
-    box-shadow: none
-    font-family: 'Roboto', sans-serif
-    color: #707070
-    text-shadow: none
   .jq-selectbox__dropdown
     top: 35px
   .jq-selectbox__trigger
@@ -1719,33 +1709,7 @@ button.icon-unsorted
       resize: none
     input[type="file"]
       outline: none
-    .jq-selectbox
-      width: 100%
-    .jq-selectbox__select
-      height: 40px
-      line-height: 40px
-      padding: 0 17px
-      border: 1px solid #d7d7d7
-      border-bottom-color: #d7d7d7
-      border-radius: 0
-      background: #f9f9f9
-      box-shadow: none
-      font-family: 'Roboto', sans-serif
-      color: #707070
-      text-shadow: none
-    .jq-selectbox__dropdown
-      top: 35px
-    .jq-selectbox__trigger
-      border-left: none
-    .jq-selectbox__trigger-arrow
-      border: none
-      top: 0
-      right: 20px
-      line-height: 40px
-      font-size: 15px
-      &::before
-        content: '\f0d7'
-        font-family: 'icomoon'
+    @include select-form
     .jq-file
       width: 100%
       border-radius: 0px
@@ -1789,4 +1753,83 @@ button.icon-unsorted
       text-align: center
 //-----------------------------------------------------
 //end upload
+//start withdrawals
+.withdrawals
+  padding-bottom: 145px
+.withdrawals__inner
+  display: flex
+  justify-content: space-between
+.withdrawals__content
+  padding: 0 35px
+.withdrawals__earnings,
+.withdrawals__history
+  max-width: 570px
+  width: 100%
+  background-color: #fff
+  border: 1px solid #dedede
+  height: 100%
+.withdrawals__title
+  border-bottom: 1px solid #dedede
+  font-size: 24px
+  font-weight: 500
+  color: $dark-bg
+  padding: 18px 15px 25px 30px
+  margin-bottom: 30px
+.withdrawals__line
+  margin-bottom: 30px
+  label
+    display: block
+    width: 100%
+    margin-bottom: 22px
+    font-size: 16px
+    color: $dark-bg
+    font-weight: 500
+    span
+      color: $green
+  input
+    width: 100%
+    height: 40px
+    border: 1px solid #dedede
+    background-color: #f9f9f9
+    padding: 14px 18px 10px
+    &::placeholder
+      color: #707070
+  @include select-form
+button
+  margin-bottom: 50px
+  color: #fff
+  background-color: $green
+  border: none
+  padding: 15px 35px
+  text-transform: uppercase
+  cursor: pointer
+.withdrawals__content-items
+  padding-bottom: 35px
+.withdrawals__content
+  &-item
+    display: flex
+    height: 42px
+    align-items: center
+    font-size: 13px
+    color: #444
+    font-weight: 700
+    &:nth-child(odd)
+      background-color: #f9f9f9
+  &-date
+    width: 154px
+    padding-left: 20px
+    font-weight: 500
+  &-email
+    width: 180px
+    font-weight: normal
+  &-price
+    width: 70px
+  &-status
+    width: 88px
+    &.withdrawals__content-paid
+      color: $green
+  
+
+//-----------------------------------------------------
+//end withdrawals
 @import 'media'
